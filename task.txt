@@ -1,0 +1,3 @@
+stud_dtls: sl,sid,nm,class,cur_yr
+
+Stud_his:sl,sid,yr,class
