@@ -1,5 +1,6 @@
 <?php
 include("connection.php");
+$sl=$_REQUEST['sl'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,7 @@ include("connection.php");
             <td>current year</td>
         </tr>
         <?php
-        $query=mysqli_query($con,"SELECT * FROM `stud_details` ");
+        $query=mysqli_query($con,"SELECT * FROM `stud_details` where sl='$sl'");
         while($result=mysqli_fetch_assoc($query)){
             $sl=$result['sl'];
             $name=$result['name'];
